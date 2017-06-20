@@ -1,0 +1,116 @@
+/* 
+ * login page content 
+ */
+.login_group {
+	.clear_float;
+	width: 1000px;
+	margin: 80px auto 40px;
+}
+.login_group__item {
+	float: left;
+	width: 499px;
+	padding: 50px 0;
+	border-left: 1px solid @border_light_color;
+	fieldset {
+		border: 0;
+		padding: 0 60px;
+		margin: 0;
+	}
+	.commtext {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+.login_group__item--password,
+.login_group__item--left {
+	border-left: 0;
+	border-right: 1px solid @border_light_color;
+	fieldset {
+		padding-left: 0;
+	}
+}
+.login_group__item--right {
+	margin-left: -1px;
+	fieldset {
+		padding-right: 0;
+	}
+}
+.login_group__item--password {
+	display: none;
+}
+.login_title {
+	margin: 0 0 30px;
+	font-size: 20px;
+	font-weight: @weight_normal;
+}
+.login_notice {
+	margin: 0;
+	padding: 0 0 5px;
+	font-size: 13px;
+	line-height: 20px;
+}
+.login_notice_list {
+	margin: 22px 0 0 0;
+	padding: 0;
+	li {
+		margin: 0;
+		padding: 0 0 5px;
+		font-size: 13px;
+		line-height: 20px;
+		list-style: none;
+	}
+}
+.login_option {
+	margin: 15px 0 0;
+	padding: 0;
+	li {
+		position: relative;
+		margin: 0;
+		padding: 0 8px 0 7px;
+		display: inline-block;
+		font-size: 13px;
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 2px;
+			display: block;
+			width: 1px;
+			height: 12px;
+			background: #999;
+		}
+	}
+	li {
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+.login_button_group {
+	margin: 30px 0 0 -10px;
+	.clear_float;
+	.commbtn_m,
+	.commbtn_m_i {
+		float: left;
+		width: 214px;
+		margin-left: 10px;
+	}
+}
+.login_valid_txt {
+	display: block;
+	padding-top: 3px;
+	font-size: 13px;
+	color: @txt_error_color;
+}
+.btn_ex_anchor {
+	display: inline-block;
+	padding-top: 30px;
+	font-size: 13px;
+}

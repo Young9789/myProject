@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>symphony - Register</title>
+	<!--#include file="/include/_head.html" -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!--#include file="/include/_header.html" -->
+		<!-- global container -->
+		<div class="g_container">
+			<div class="category_depth">
+				<a href="#">HOME</a> / <a href="#">WOMAN</a> / <a href="#">DESSES</a>
+			</div>
+			<div class="content">
+				<div class="page_header">
+					<h1 class="page_title">REGISTRATION <span class="title_valid_txt">* Indicates required information</span></h1>
+				</div>
+
+				<!-- sub content -->
+				<div class="form_table">
+					<h2 class="form_table__title">SIGN IN INFORMATION</h2>
+					<table>
+						<caption hidden>account info</caption>
+						<tr>
+							<th scope="row"><label for="signEmail">EMAIL ADDRESS (USER ID) <span class="require_txt">*</span></label></th>
+							<td>
+								<input type="text" class="commtext" id="signEmail" placeholder="Email Address">
+								<!-- .account_valid_txt요소는 각 td 내부에 input 아래에 들어가는 조건으로 설계되었습니다. -->
+								<span class="account_valid_txt">error text</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="signConfirmEmail">CONFIRM EMAIL <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="signConfirmEmail" placeholder="Confirm Email"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="signPass">PASSWORD <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="signPass" placeholder="Password"><span class="account_valid_txt">Passwords must be minimum 8 characters and must contain one lower &amp; Uppercase letter, and a number or symbol</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="signConfirmPass">CONFIRM PASSWORD <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="signConfirmPass" placeholder="Confirm Password"></td>
+						</tr>
+					</table>
+					<h2 class="form_table__title">COMPANY INFORMATION</h2>
+					<table>
+						<caption hidden>account info</caption>
+						<tr>
+							<th scope="row"><label for="companyName">COMPANY NAME <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="companyName" placeholder="Company Name"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="companyLegal">CONTACT NAME <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="companyLegal" placeholder="Legal Name / Attention"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="companyContactName">LEGAL NAME / ATTENTION <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="companyContactName" placeholder="Contact Name"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="companyTitle">TITLE</label></th>
+							<td><input type="text" class="commtext" id="companyTitle" placeholder="Title"></td>
+						</tr>
+					</table>
+					<h2 class="form_table__title">SHIPPING ADDRESS</h2>
+					<table>
+						<caption hidden>account info</caption>
+						<tr>
+							<th scope="row"><label for="shippingCountry">COUNTRY </label></th>
+							<td>
+								<select name="" id="shippingCountry" class="commselect">
+									<option value="1">United States</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="shippingAddr1">SHIPPING ADDRESS 1 <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="shippingAddr1" placeholder="Address 1"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="shippingAddr2">SHIPPING ADDRESS 2<span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="shippingAddr2" placeholder="Address 2"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="shippingCity">SHIPPING CITY</label></th>
+							<td><input type="text" class="commtext" id="shippingCity" placeholder="City"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="shippingState">SHIPPING STATE<span class="require_txt">*</span></label></th>
+							<td>
+								<select name="" id="shippingState" class="commselect">
+									<option value="1">Select a State</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="shippingZipCode">SHIPPING ZIP CODE</label></th>
+							<td><input type="text" class="commtext" id="shippingZipCode" placeholder="Zip Code"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="shippingPhone">SHIPPING PHONE NUMBER<span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="shippingPhone" placeholder="Phone Number"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="shippingFaxNumber">SHIPPING FAX NUMBER</label></th>
+							<td><input type="text" class="commtext" id="shippingFaxNumber" placeholder="Fax Number"></td>
+						</tr>
+					</table>
+					<h2 class="form_table__title">BILLING ADDRESS</h2>
+					<table>
+						<caption hidden>account info</caption>
+						<tr>
+							<th scope="row"><label for="billingCountry">COUNTRY </label></th>
+							<td>
+								<label for="shippingSameCheck" class="commlabel commlabel--input_top"><input type="checkbox" id="shippingSameCheck" class="commcheck">SAME AS SHIPPING ADDRESS</label>
+								<select name="" id="billingCountry" class="commselect">
+									<option value="1">United States</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingAddr1">BILLING ADDRESS 1 <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="billingAddr1" placeholder="Address 1"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingAddr2">BILLING ADDRESS 2<span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="billingAddr2" placeholder="Address 2"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingCity">BILLING CITY</label></th>
+							<td><input type="text" class="commtext" id="billingCity" placeholder="City"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingState">BILLING STATE<span class="require_txt">*</span></label></th>
+							<td>
+								<select name="" id="billingState" class="commselect">
+									<option value="1">Select a State</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingZipCode">BILLING ZIP CODE</label></th>
+							<td><input type="text" class="commtext" id="billingZipCode" placeholder="Zip Code"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingPhone">BILLING PHONE NUMBER</label></th>
+							<td><input type="text" class="commtext" id="billingPhone" placeholder="Phone Number"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingFaxNumber">BILLING FAX NUMBER</label></th>
+							<td><input type="text" class="commtext" id="billingFaxNumber" placeholder="Fax Number"></td>
+						</tr>
+					</table>
+					<h2 class="form_table__title">ADDITIONAL INFORMATION</h2>
+					<table>
+						<caption hidden>account info</caption>
+						<tr>
+							<th scope="row"><label for="SellerPermit">SELLER'S PERMIT(RESALE ID) <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="SellerPermit" placeholder="Business license, permit, certificate, etc."></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="SellerPermitFile">SELLER'S PERMIT FILE TO UPLOAD <span class="require_txt">*</span></label></th>
+							<td>
+								<span class="commfile">
+									<span class="commbtn_s">CHOOSE FILE<input class="file" type="file" accept=".gif, .jpg, .png, .pdf" id="SellerPermitFile"></span>
+									<input type="text" class="name" placeholder="You can upload JPG, PNG, GIF or PDF." readonly>
+									<button class="js_del_file btn_input_del">DEL</button>
+								</span>
+								<!-- 
+									.commfile.is-active 상태일때 삭제버튼 표시
+									accept 속성으로 파일 종류 선택 필터링 가능
+										- ie9 이상의 경우 목록에 없는 확장자의 파일은 선택할 수 없음
+										- ie9 이하의 경우 업로드 할수 없는 확장자의 파일 선택시 alert 출력
+										- alert의 경우 accept 속성의 내용을 첨부
+									multiple 속성 사용가능 (파일명 여러개 출력)
+								-->
+								<!-- <span class="account_valid_txt">error text</span> -->
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="webAddress">WEB ADDRESS</label></th>
+							<td><input type="text" class="commtext" id="webAddress" placeholder="http://www.example.com"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="hearAboutUs">HOW DID YOU HEAR ABOUT US? <span class="require_txt">*</span></label></th>
+							<td>
+								<ul class="radio_list">
+									<li><label class="commlabel"><input type="radio" name="hearAboutMethod" class="commradio">GOOGLE</label></li>
+									<li><label class="commlabel"><input type="radio" name="hearAboutMethod" class="commradio">MARKET/TRADE SHOWS</label></li>
+									<li><label class="commlabel"><input type="radio" name="hearAboutMethod" class="commradio">REFERRED BY A MANUFACTURER</label></li>
+									<li><label class="commlabel"><input type="radio" name="hearAboutMethod" class="commradio">REFERRED BY A FRIEND</label></li>
+									<li><label class="commlabel"><input type="radio" name="hearAboutMethod" class="commradio">YAHOO</label></li>
+									<li><label class="commlabel"><input type="radio" name="hearAboutMethod" class="commradio">OTHER (PLEASE SPECIFY HERE):</label></li>
+								</ul>
+								<input type="text" class="commtext" id="hearAboutUs" placeholder="Company Name">
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="commbtn_group">
+					<button class="commbtn_l_i submit_btn">REGISTER</button>
+				</div>
+			</div>
+			<!-- /sub content -->
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<!-- /global container -->
+		<!--#include file="/include/_side_cart.html" -->
+		<!--#include file="/include/_footer.html" -->
+		<!--#include file="/include/_foot.html" -->
+	</div>
+	<!-- /global wrap -->
+</body>
+</html>

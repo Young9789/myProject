@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>symphony - Product</title>
+	<!--#include file="/include/_head.html" -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!--#include file="/include/_header.html" -->
+		<!-- global container -->
+		<div class="g_container">
+
+
+			<div class="category_depth">
+				<a href="#" class="category_depth__back">&lt; BACK TO LIST</a>&nbsp;&nbsp;&nbsp;<a href="#">HOME</a> / <a href="#">WOMAN</a> / <a href="#">DESSES</a>
+				<div class="product_navi">
+					<a href="#">&lt;&nbsp;PREV</a>
+					<a href="#">NEXT&nbsp;&gt;</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="img_container">
+					<!-- 활성화시 is-active -->
+					<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+					<a class="magnifier_container js_magnifier js_big_image" href="#"><span class="inner"></span></a>
+					<ul class="thumb_list">
+					<!-- 
+						[data-big-image] 객체의 href는 상위 큰이미지,
+						data-big-image 속성 값은 확대될 이미지 url 입니다.
+					 -->
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image01.jpg" data-big-image="../images/demo/pdt_image01.jpg"><img src="../images/demo/pdt_image01.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image02.jpg" data-big-image="../images/demo/pdt_image02.jpg"><img src="../images/demo/pdt_image02.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image03.jpg" data-big-image="../images/demo/pdt_image03.jpg"><img src="../images/demo/pdt_image03.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image04.jpg" data-big-image="../images/demo/pdt_image04.jpg"><img src="../images/demo/pdt_image04.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image01.jpg" data-big-image="../images/demo/pdt_image01.jpg"><img src="../images/demo/pdt_image01.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image02.jpg" data-big-image="../images/demo/pdt_image02.jpg"><img src="../images/demo/pdt_image02.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image03.jpg" data-big-image="../images/demo/pdt_image03.jpg"><img src="../images/demo/pdt_image03.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image04.jpg" data-big-image="../images/demo/pdt_image04.jpg"><img src="../images/demo/pdt_image04.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image01.jpg" data-big-image="../images/demo/pdt_image01.jpg"><img src="../images/demo/pdt_image01.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="../images/demo/pdt_image02.jpg" data-big-image="../images/demo/pdt_image02.jpg"><img src="../images/demo/pdt_image02.jpg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="info_container">
+					<!-- 하트 활성화 : is-active -->
+					<h1 class="product_title">D123111</h1>
+					<span class="product_price"><span class="sale">$32.00</span> <span class="normal">$32.00</span> <del class="discount">$100.00</del></span>
+					<p class="product_state">
+						AVAILABILITY : Future Item <span class="txt_extra_color">(Available Date: <span class="txt_accent_color">01/15/2017</span>)</span>
+						<!-- AVAILABILITY : <span class="txt_accent_color">Out of Stock</span> -->
+					</p>
+					<ul class="small_txt_menu">
+						<li class="small_txt_menu__item"><a href="#productReview">3 REVIEW</a></li>
+						<li class="small_txt_menu__item"><a href="#" data-toggle-slide="reviewWriteForm">WRITE A REVIEW</a></li>
+					</ul>
+					<form data-toggle-content="reviewWriteForm" class="review_container">
+						<fieldset class="write_review">
+							<legend hidden>WRITE A REVIEW</legend>
+							<h3 class="write_review__title">WRITE A REVIEW</h3>
+							<textarea name="" id="reviewTextarea" class="write_review__textarea"></textarea>
+							<div class="write_review__btns"><button class="commbtn_m">SUBMIT REVIEW</button></div>
+						</fieldset>
+					</form>
+					<div class="simple_dct">
+						<h3 class="simple_dct__title">DESCRIPTION</h3>
+						<div class="simple_dct__content">
+							<p>
+								Your high-waisted bottoms shouldn't be limited to tucked-in tops.<br>
+								This short-sleeved blouse is a great
+							</p>
+							<ul class="marker_list">
+								<li>PABRIC : <span class="txt_sub_color">100% symphonyyester</span></li>
+								<li>PABRIC : <span class="txt_sub_color">100% symphonyyester</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="product_options">
+						<div class="option_header">
+							<!-- <h3 class="option_header__title"><span class="spr_common"></span>PURCHASE ALL COLORS</h3> -->
+							<h3 class="option_header__sale">EVEN COLOR SALE ONLY<span class="ico_circel_arrow"><span class="spr_common">&gt;</span></span></h3>
+							<div class="option_header__right">
+								<label for="inputPack" class="commlabel_input">PURCHASE ALL COLORS : </label><input id="inputPack" type="number" class="commtext input_pack" value="10">
+								<!-- <label for="inputPack" class="commlabel_input">PACK : </label><input id="inputPack" type="text" readonly class="commtext input_pack"> -->
+							</div>
+						</div>
+						<div class="option_table">
+							<table>
+								<thead>
+									<tr>
+										<th scope="col" class="left_col">COLOR</th>
+										<th scope="col" class="col">S</th>
+										<th scope="col" class="col">M</th>
+										<th scope="col" class="col">L</th>
+										<th scope="col" class="col_pack">PACK</th>
+										<th scope="col" class="col_qty">QTY</th>
+										<th scope="col" class="col_amt">AMT</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td class="total_txt left_col" colspan="5">TOTAL AMOUNT</td>
+										<td>30</td>
+										<td><span class="total_price">$13.220.00</span></td>
+									</tr>
+								</tfoot>
+								<tbody class="group_line">
+									<tr>
+										<td class="left_col">PACK SALE</td>
+										<td>2</td>
+										<td>2</td>
+										<td>2</td>
+										<td>1</td>
+										<td>6</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td class="left_col">YELLOW</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td><input type="number" class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+									<tr>
+										<td class="left_col">YELLOW</td>
+										<td><input type="number" disabled class="commtext"></td>
+										<td><input type="number" disabled class="commtext"></td>
+										<td><input type="number" disabled class="commtext"></td>
+										<td><input type="number" disabled class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+									<tr>
+										<td class="left_col">CRL-BLACK/NEON CORAL</td>
+										<td><input type="number" class="commtext"></td>
+										<td><input type="number" class="commtext"></td>
+										<td><input type="number" class="commtext"></td>
+										<td><input type="number" class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- 						내용이 많은 경우 예제
+							<table>
+								<thead>
+									<tr>
+										<th class="left_col">COLOR</th>
+										<th class="col">S</th>
+										<th class="col">M</th>
+										<th class="col">L</th>
+										<th class="col">S</th>
+										<th class="col">M</th>
+										<th class="col">L</th>
+										<th class="col">L</th>
+										<th class="col">L</th>
+										<th class="col">L</th>
+										<th class="col">L</th>
+										<th class="col">L</th>
+										<th class="col_pack">PACK</th>
+										<th class="col_qty">QTY</th>
+										<th class="col_amt">AMT</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td class="total_txt left_col" colspan="13">TOTAL AMOUNT</td>
+										<td>30</td>
+										<td><span class="total_price">$13.220.00</span></td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td class="left_col">YELLOW</td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+									<tr>
+										<td class="left_col">CRL-BLACK/NEON CORAL</td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext"></td>
+										<td><input type="text" class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+								</tbody>
+							</table> -->
+						</div>
+					</div>
+					<div class="button_group_2col">
+						<a href="#" class="commbtn_l_i" data-layer-open="#layerConfirmation">ADD TO CART</a>
+						<a href="#" class="commbtn_l">CHECK OUT</a>
+					</div>
+				</div>
+				<div class="related_product">
+					<h3 class="related_product__title">RELATED PRODUCT</h3>
+					<ul class="product_list product_list_detail" data-list-type="thumb">
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+							</a>
+							<a href="#" class="product_item__title">P123123</a>
+							<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+							<ul class="product_item__menu">
+								<li>
+									<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+								</li>
+								<li>
+									<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+								</li>
+							</ul>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+							</a>
+							<a href="#" class="product_item__title">P123123</a>
+							<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+							<ul class="product_item__menu">
+								<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+								<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+							</ul>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+							</a>
+							<a href="#" class="product_item__title">P123123</a>
+							<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+							<ul class="product_item__menu">
+								<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+								<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+							</ul>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+							</a>
+							<a href="#" class="product_item__title">P123123</a>
+							<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+							<ul class="product_item__menu">
+								<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+								<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="product_review" id="productReview">
+					<h3 class="product_review__title"><a href="#" class="is-active" data-toggle-slide="reviewContainer">REVIEW(3) <span class="icon"><span>+/-</span></span></a></h3>
+					<ul class="review_list" data-toggle-content="reviewContainer">
+						<li class="review_item">
+							<strong class="review_item__name">John Lee Fashion</strong>
+							<span class="review_item__info">Mar 04, 2016</span>
+							<p class="review_item__content">
+								Slim line looks modern fit trend and over shoulder sleeves needs more pad outward.
+							</p>
+							<a href="#" class="review_item__delete"><span class="spr_common">&nbsp;</span>Delete My Comment</a>
+						</li>
+						<li class="review_item">
+							<strong class="review_item__name">John Lee Fashion</strong>
+							<span class="review_item__info">Mar 04, 2016</span>
+							<p class="review_item__content">
+								Slim line looks modern fit trend and over shoulder sleeves needs more pad outward.
+							</p>
+							<a href="#" class="review_item__delete"><span class="spr_common">&nbsp;</span>Delete My Comment</a>
+						</li>
+						<li class="review_item">
+							<strong class="review_item__name">John Lee Fashion</strong>
+							<span class="review_item__info">Mar 04, 2016</span>
+							<p class="review_item__content">
+								Slim line looks modern fit trend and over shoulder sleeves needs more pad outward.
+							</p>
+							<a href="#" class="review_item__delete"><span class="spr_common">&nbsp;</span>Delete My Comment</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+	
+		</div>
+		<!-- /global container -->
+		<!--#include file="/include/_side_cart.html" -->
+		<!--#include file="/include/_footer.html" -->
+		<!--#include file="/include/_foot.html" -->
+
+		<!-- Confirm Layer -->
+		<div class="layer_container" id="layerConfirmation">
+			<div class="layer_content">
+				<div class="content content--layer">
+					<h2 class="layer_title">CONFIRMATION</h2>
+					<div class="layer_message">
+						<p>Items are sucessfully added to your shopping cart.</p>
+					</div>
+					<div class="commbtn_group">
+						<button class="commbtn_s_i right" data-layer-close="#layerConfirmation">CONTINUE SHOPPING</button>
+						<button class="commbtn_s_d right">CHECK OUT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Confirm Layer -->
+	</div>
+	<!-- /global wrap -->
+</body>
+</html>

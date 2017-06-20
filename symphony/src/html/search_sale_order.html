@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>symphony - SEARCH SALES ORDERS</title>
+	<!--#include file="/include/_head.html" -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!--#include file="/include/_header.html" -->
+		<!-- global container -->
+		<div class="g_container">
+			<div class="category_depth">
+				<a href="#">HOME</a> / <a href="#">WOMAN</a> / <a href="#">DESSES</a>
+			</div>
+
+			<!-- side content -->
+			<div class="content_side">
+				<div class="content_side__group content_side__group--menu">
+					<strong class="content_side__title">MY ACCOUNT</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><a href="#">INFORMATION</a></li>
+						<li class="opt_list__item"><a href="#">MY CREDIT CARD</a></li>
+					</ul>
+					<strong class="content_side__title">MY ORDERS</strong>
+					<ul class="opt_list">
+						<!-- 선택된 카테고리 is-active -->
+						<li class="opt_list__item is-active"><a href="#">SALES ORDER HISTORY</a></li>
+						<li class="opt_list__item"><a href="#">INVOICE HISTORY</a></li>
+						<li class="opt_list__item"><a href="#">STATEMENT</a></li>
+						<li class="opt_list__item"><a href="#">TRANSACTIONS</a></li>
+						<li class="opt_list__item"><a href="#">INVOICED ITEMS</a></li>
+						<li class="opt_list__item"><a href="#">UNSHIPPED ITEMS</a></li>
+					</ul>
+					<strong class="content_side__title">MY ITEMS</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><a href="#">FAVORITES</a></li>
+						<li class="opt_list__item"><a href="#">RECENTLY VIEWED ITEM</a></li>
+					</ul>
+					<strong class="content_side__title"><a href="#">ANNOUNCEMENT</a></strong>
+				</div>
+			</div>
+			<!-- / side content -->
+			<!-- sub content -->
+			<div class="content content--sub">
+				<div class="page_header">
+					<h1 class="page_title">SALES ORDER</h1>
+				</div>
+				<div class="search_sale_head">
+					<h2 class="search_sale_head__title"><span class="spr_common">&nbsp;</span>SEARCH SALES ORDERS</h2>
+					<div class="search_sale_select">
+						<label for="showCount" class="commlabel_input">SHOW :</label>
+						<select name="" id="showCount" class="commselect">
+							<option value="1">12</option>
+							<option value="2">20</option>
+							<option value="3">30</option>
+						</select>
+					</div>
+				</div>
+				<div class="search_panel">
+					<ul class="panel_list">
+						<li class="panel_list__item">
+							<label class="title" for="searchOrderDate">ORDER DATE</label>
+							<span class="commtext commtext--calender js_calender_range">
+								<input type="text" id="searchOrderDate" class="datepicker_target js_search_daterange" value="11/09/2016 - 12/26/2016">
+								<span class="icon"><span class="spr_common">&nbsp;</span></span>
+							</span>
+						</li>
+						<li class="panel_list__item">
+							<label class="title" for="searchPoNumber">PO NO.</label>
+							<input type="text" class="commtext" id="searchPoNumber" value="" placeholder="PO NO.">
+						</li>
+						<li class="panel_list__item">
+							<label class="title" for="searchOrderId">ORDER ID</label>
+							<input type="text" class="commtext" id="searchOrderId" value="" placeholder="ORDER ID">
+						</li>
+						<li class="panel_list__item">
+							<label class="title" for="searchStatus">STATUS</label>
+							<select name="" class="commselect" id="searchStatus">
+								<option value="STATUS">STATUS</option>
+								<option value="STATUS">STATUS</option>
+								<option value="STATUS">STATUS</option>
+							</select>
+						</li>
+					</ul>
+					<div class="search_panel__btn">
+						<button class="commbtn_s_i">SEARCH</button>
+					</div>
+				</div>
+				<div class="result_header">
+					<h2 class="result_header__title">THERE ARE <span class="txt_accent_color">155</span> RECORD(S).</h2>
+				</div>
+				<div class="sale_order_table">
+					<table>
+						<thead>
+							<tr>
+								<th class="col_date" scope="col">ORDER DATE</th>
+								<th class="col_id" scope="col">ORDER ID</th>
+								<th class="col_no" scope="col">PO NO.</th>
+								<th class="col_amount" scope="col">AMOUNT</th>
+								<th class="col_qty" scope="col">QTY</th>
+								<th class="col_open" scope="col">OPEN</th>
+								<th class="col_status" scope="col">STATUS</th>
+								<th class="col_form" scope="col">FROM</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+							<tr>
+								<td>06/07/2016</td>
+								<td>1677 <button class="spr_common ico_print">print</button></td>
+								<td></td>
+								<td class="price">$0.00</td>
+								<td>12</td>
+								<td>12</td>
+								<td><span class="txt_accent_color">Confirmed Order</span></td>
+								<td>Web</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- pagination -->
+				<div class="pagination">
+					<a href="#" class="pagination__prev">&lt;</a>
+					<span class="is-active">1</span>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+					<a href="#" class="pagination__next">&gt;</a>
+					<p class="pagination__info">SHOWING 1-4 OF 4 RESULTS</p>
+				</div>
+				<!-- /pagination -->
+			</div>
+			<!-- /sub content -->
+
+
+		</div>
+		<!-- /global container -->
+		<!--#include file="/include/_side_cart.html" -->
+		<!--#include file="/include/_footer.html" -->
+		<!--#include file="/include/_foot.html" -->
+	</div>
+	<!-- /global wrap -->
+</body>
+</html>
