@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ina - Products Search Result</title>
+	<!--#include file="/include/_head.html" -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!--#include file="/include/_header.html" -->
+		<!-- global container -->
+		<div class="g_container">
+
+			<!-- side content -->
+			<div class="content_side">
+				<div class="content_side__group content_side__group--menu">
+					<strong class="content_side__title"><a href="#">TOPS</a> <span class="txt_accent_color">28</span></strong>
+					<ul class="opt_list">
+						<!-- 선택된 카테고리 is-active -->
+						<li class="opt_list__item is-active"><a href="#">TOP <span class="txt_accent_color">11</span></a></li>
+						<li class="opt_list__item"><a href="#">BOTTOM <span class="txt_accent_color">17</span></a></li>
+					</ul>
+				</div>
+				<div class="content_side__group">
+					<strong class="content_side__title">FILTER BY PRICE</strong>
+					<div class="price_filter">
+						<!--
+							data-slider 속성은 슬라이더의 범위를 지정하고 이벤트를 삽입합니다.
+							data-slider-default 속성은 선택된 범위 값을 지정합니다.
+							#price_option_slider 내부 구조는 필수적으로 유지되어야 합니다.
+							[data-slider] 요소에 change 이벤트, 그리고 $('[data-slider]').data('sliderNow')에서 현재 상태값을 확인할 수 있습니다.
+						-->
+						<div id="price_option_slider" data-slider="{'start':10.00,'end':200.00}" data-slider-default="{'start':'20.00','end':'100.00'}">
+							<div class="option_slider">
+								<div class="track">
+									<button class="btn" data-slider-btn="start" data-slider-value="0">*</button>
+									<button class="btn" data-slider-btn="end" data-slider-value="100">*</button>
+									<div class="track_inner"></div>
+								</div>
+							</div>
+							<div class="option_slider_value js_price_value">PRICE: $<span class="js_start">00</span> - $<span class="js_end">00</span></div>
+						</div>
+					</div>
+					<div class="side_btn_group side_btn_group--d">
+						<button class="commbtn_s">APPLY</button><button class="commbtn_s">CLEAR</button>
+					</div>
+				</div>
+				<div class="content_side__group">
+					<strong class="content_side__title">MORE WAYS TO SHOP</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><label class="commlabel"><input type="checkbox" value="" class="commcheck">RE-ORDER</label></li>
+						<li class="opt_list__item"><label class="commlabel"><input type="checkbox" value="" class="commcheck">IN STOCK ONLY</label></li>
+						<li class="opt_list__item"><label class="commlabel"><input type="checkbox" value="" class="commcheck">SALE ITEMS</label></li>
+					</ul>
+					<div class="side_btn_group">
+						<button class="commbtn_s">CLEAR</button>
+					</div>
+				</div>
+				<div class="content_side__banner">
+					<a href="#"><img src="../images/banner/content_side_banner.jpg" alt="banner"></a>
+				</div>
+			</div>
+			<!-- / side content -->
+			<!-- sub content -->
+			<div class="content content--sub">
+				<!-- <h2 class="search_result_txt">SEARCH RESULT FOR <span class="txt_accent_color">"Key Word"</span> : <span class="count">5 ITEMS</span> FOUND.</h2>  -->
+				<div class="page_header">
+					<h1 class="page_title">SEARCH RESULT FOR <span class="txt_accent_color">"Key Word"</span> : <span class="count">5 ITEMS</span> FOUND.</h1><!-- 16-11-14 요소 추가 -->
+				</div>
+				<div class="product_list_option">
+					<ul class="option_list option_list--left">
+						<li class="option_list__item">
+							<label for="listSort" class="commlabel_input">SORT BY</label>
+							<select name="" id="listSort" title="select sort" class="commselect commselect--sort">
+								<option value="New" selected>New</option>
+								<option value="Price Low-High">Price Low-High</option>
+								<option value="Price High-Low">Price High-Low</option>
+								<option value="Style No.">Style No.</option>
+							</select>
+						</li>
+					</ul>
+					<ul class="option_list">
+						<!-- data-list-type-toggle 속성으로 기능 정의, 리스트 타입이 변경됩니다. -->
+						<li class="option_list__item"><button class="commbtn_s_w btn_list_thumb is-active" data-list-type-toggle="thumb"><span class="spr_common"></span></button></li>
+						<li class="option_list__item"><button class="commbtn_s_w btn_list_normal" data-list-type-toggle="normal"><span class="spr_common"></span></button></li>
+					</ul>
+					<ul class="option_list">
+						<li class="option_list__item">
+							<label for="listCount" class="commlabel_input">ITEM PER PAGE</label>
+							<select name="" id="listCount" title="select item count" class="commselect commselect--count">
+								<option value="12" selected>12</option>
+								<option value="16">16</option>
+								<option value="20">20</option>
+								<option value="24">24</option>
+								<option value="28">28</option>
+								<option value="32">32</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<!-- product list -->
+				<div class="product_list_wrap">
+					<!-- data-list-type="normal" 적용시 가로 리스트 모드 적용 -->
+					<ul class="product_list" data-list-type="thumb">
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_01.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_04.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">	
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<!-- 클릭 활성화 is-active -->
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_02.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_03.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_04.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_01.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_03.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_02.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_01.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_04.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<!-- 클릭 활성화 is-active -->
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_02.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_03.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_04.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_01.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_03.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_02.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_220x331_01.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_220x331_04.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<!-- 클릭 활성화 is-active -->
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- / product list -->
+
+				<!-- pagination -->
+				<div class="pagination">
+					<a href="#" class="pagination__prev">&lt;</a>
+					<span class="is-active">1</span>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+					<a href="#" class="pagination__next">&gt;</a>
+					<p class="pagination__info">SHOWING 1-4 OF 4 RESULTS</p>
+				</div>
+				<!-- /pagination -->
+
+			</div>
+			<!-- /sub content -->
+		</div>
+		<!-- /global container -->
+		<!-- container bottom sale product -->
+		<div class="product_list_wrap product_list_wrap--sale">
+			<h3 class="box_title"><span class="txt_accent_color">WOMENS</span> BEST SALE ITEMS</h3>
+			<ul class="product_list product_list--sale">
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_220x331_01.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_220x331_04.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_220x331_02.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_220x331_03.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_220x331_03.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_220x331_02.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_220x331_04.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_220x331_02.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_220x331_01.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_220x331_03.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<!-- 클릭 활성화 is-active -->
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- /container bottom sale product -->
+		<!--#include file="/include/_side_cart.html" -->
+		<!--#include file="/include/_footer.html" -->
+		<!--#include file="/include/_foot.html" -->
+	</div>
+	<!-- /global wrap -->
+	<!--#include file="/include/_layer_product.html" -->
+</body>
+</html>

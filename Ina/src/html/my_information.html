@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ina - My INFORMATION</title>
+	<!--#include file="/include/_head.html" -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!--#include file="/include/_header.html" -->
+		<!-- global container -->
+		<div class="g_container">
+			<div class="category_depth">
+				<a href="#">HOME</a> / <a href="#">WOMAN</a> / <a href="#">DESSES</a>
+			</div>
+			<!-- side content -->
+			<div class="content_side">
+				<div class="content_side__group content_side__group--menu">
+					<strong class="content_side__title">MY ACCOUNT</strong>
+					<ul class="opt_list">
+						<!-- 선택된 카테고리 is-active -->
+						<li class="opt_list__item is-active"><a href="#">INFORMATION</a></li>
+						<li class="opt_list__item"><a href="#">MY CREDIT CARD</a></li>
+					</ul>
+					<strong class="content_side__title">MY ORDERS</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><a href="#">SALES ORDER HISTORY</a></li>
+						<li class="opt_list__item"><a href="#">INVOICE HISTORY</a></li>
+						<li class="opt_list__item"><a href="#">STATEMENT</a></li>
+						<li class="opt_list__item"><a href="#">TRANSACTIONS</a></li>
+						<li class="opt_list__item"><a href="#">INVOICED ITEMS</a></li>
+						<li class="opt_list__item"><a href="#">UNSHIPPED ITEMS</a></li>
+					</ul>
+					<strong class="content_side__title">MY ITEMS</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><a href="#">FAVORITES</a></li>
+						<li class="opt_list__item"><a href="#">RECENTLY VIEWED ITEM</a></li>
+					</ul>
+					<strong class="content_side__title"><a href="#">ANNOUNCEMENT</a></strong>
+				</div>
+			</div>
+			<!-- / side content -->
+			<!-- sub content -->
+			<div class="content content--sub">
+				<div class="page_header">
+					<h1 class="page_title">MY INFORMATION</h1>
+				</div>
+				<!-- <p class="top_intro_txt">YOU CAN UPDATE YOUR INFORMATION AND ADDRESS HERE</p> -->
+				<div class="form_table">
+					<table>
+						<caption hidden>account info</caption>
+						<tr>
+							<!-- input 아래 validation text
+								<span class="account_valid_txt">Passwords don't match!!</span>
+							-->
+							<th scope="row"><label for="accountId">CURRENT USER ID (EMAIL) <span class="require_txt">*</span></label></th>
+							<td>
+								<input type="text" class="commtext" id="accountId" placeholder="Current User ID (Email)" disabled>
+								<span class="account_valid_txt">Invalid Email Format</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="accountPass1">PASSWORD <span class="require_txt">*</span></label></th>
+							<td>
+								<div class="commtext_btn">
+									<input type="password" id="accountPass1" class="commtext" placeholder="Password">
+									<button class="commbtn_s_i" data-toggle-slide="changePassword">CHANGE</button>
+								</div>
+								<div data-toggle-content="changePassword">
+									<input type="password" id="accountPass2" class="commtext" title="password change" placeholder="New Password">
+									<span class="account_valid_txt">Passwords must be minimum 8 characters and must contain one lower &amp; Uppercase letter, and a number or symbol</span>
+									<input type="password" id="accountPass3" class="commtext" title="password change second" placeholder="Confirm New Password">
+									<span class="account_valid_txt">Passwords don't match!!</span>
+									<div class="commbtn_group commbtn_group--input">
+										<button class="commbtn_s_i">UPDATE</button>
+									</div>
+								</div>
+
+							</td>
+						</tr>
+						<tr>
+							<!-- input 아래 validation text
+								<span class="account_valid_txt">Passwords don't match!!</span>
+							-->
+							<th scope="row"><label for="accountEmail">EMAIL <span class="require_txt">*</span></label></th>
+							<td>
+								<input type="text" class="commtext" id="accountEmail" placeholder="Email" value="email@email.com">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="accountCompany">COMPANY NAME <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="accountCompany" placeholder="Company Name"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="accountName">CONTACT NAME <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="accountName" placeholder="Contact Name"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="accountPermit">SELLER'S PERMIT(RESALE ID) <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="accountPermit" placeholder="Seller's Permit(Resale ID)"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="accountAdd">WEB ADDRESS</label></th>
+							<td><input type="text" class="commtext" id="accountAdd" placeholder="Web Address"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="accountAddSel">SHIPPING ADDRESS <span class="require_txt">*</span></label></th>
+							<td>
+								<select name="" class="commselect" id="accountAddSel">
+									<option value="Shipping Address">Shipping Address</option>
+									<option value="Shipping Address">Shipping Address</option>
+									<option value="Shipping Address">Shipping Address</option>
+								</select>
+								<a href="#" class="info_field_toggle" data-toggle-slide="shippAddressInfo"><span class="commbtn_s_i"><span class="spr_common">i</span></span>1201 TEST BLVD 214 LA HABRA CA 90631</a>
+								<div class="account_inner_table" data-toggle-content="shippAddressInfo">
+									<div class="form_table form_table--in">
+										<table>
+											<caption hidden>shipping address info</caption>
+											<tr>
+												<th scope="row"><label for="accountStoreNo">STORE NO.</label></th>
+												<td><input type="text" class="commtext" readonly id="accountStoreNo" value="002" placeholder="Store No."></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShipAdd">SHIP ADDRESS NAME</label></th>
+												<td><input type="text" class="commtext" id="accountShipAdd" value="soo" placeholder="Ship Address Name"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountAttention">ATTENTION</label></th>
+												<td><input type="text" class="commtext" id="accountAttention" value="soosoo" placeholder="Attention"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountcountry">COUNTRY</label></th>
+												<td>
+													<select name="" class="commselect" id="accountcountry">
+														<option value="Country">Country</option>
+														<option value="123" selected>123</option>
+														<option value="123">123</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShippingAdd1">SHIPPING ADDRESS 1 <span class="require_txt">*</span></label></th>
+												<td><input type="text" class="commtext" id="accountShippingAdd1" value="6301 Beach Blvd Ste #350" placeholder="Shipping Address 1"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShippingAdd2">SHIPPING ADDRESS 2</label></th>
+												<td><input type="text" class="commtext" id="accountShippingAdd2" value="6301 Beach Blvd Ste #350" placeholder="Shipping Address 2"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShippingCity">SHIPPING CITY</label></th>
+												<td>
+													<select name="" class="commselect" id="accountShippingCity" placeholder="Shipping City">
+														<option value="city">city</option>
+														<option value="123">123</option>
+														<option value="123">123</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShippingState">SHIPPING STATE</label></th>
+												<td><input type="text" class="commtext" id="accountShippingState" placeholder="Shipping State"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShippingZip">SHIPPING ZIP CODE</label></th>
+												<td><input type="text" class="commtext" id="accountShippingZip" placeholder="Shipping Zip Code"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShippingPhone">SHIPPING PHONE NUMBER </label></th>
+												<td><input type="text" class="commtext" id="accountShippingPhone" placeholder="Shipping Phone Number"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="accountShippingFax">SHIPPING FAX NUMBER</label></th>
+												<td><input type="text" class="commtext" id="accountShippingFax" placeholder="Shipping Fax Number"></td>
+											</tr>
+										</table>
+									</div>
+									<div class="btn_group_account"><button class="commbtn_m">DELETE</button></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="">BILLING ADDRESS <span class="require_txt">*</span></label></th>
+							<td>
+								<a href="#" class="info_field_toggle" data-toggle-slide="billingAddressInfo"><span class="commbtn_s_i"><span class="spr_common">i</span></span>SOO CO. -1201 S BEACH #121 LA HABRA CA 90631</a>
+								<div class="account_inner_table" data-toggle-content="billingAddressInfo">
+									<div class="form_table form_table--in">
+										<table>
+											<caption hidden>billing info</caption>
+											<tr>
+												<th scope="row"><label for="billingAtten">ATTENTION</label></th>
+												<td><input type="text" class="commtext" readonly id="billingAtten"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billingCountry">COUNTRY</label></th>
+												<td>
+													<select name="" class="commselect" id="billingCountry">
+														<option value="Country">Country</option>
+														<option value="123">123</option>
+														<option value="123">123</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billCountry1">BILLING ADDRESS 1</label></th>
+												<td><input type="text" class="commtext" id="billCountry1"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billCountry2">BILLING ADDRESS 2</label></th>
+												<td><input type="text" class="commtext" id="billCountry2"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billingCity">BILLING CITY</label></th>
+												<td><input type="text" class="commtext" id="billingCity"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billingState">BILLING STATE</label></th>
+												<td>
+													<select name="" class="commselect" id="billingState">
+														<option value="Country">Country</option>
+														<option value="123">123</option>
+														<option value="123">123</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billingZip">BILLING ZIP CODE</label></th>
+												<td><input type="text" class="commtext" id="billingZip"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billingPhone">BILLING PHONE NUMBER</label></th>
+												<td><input type="text" class="commtext" id="billingPhone"></td>
+											</tr>
+											<tr>
+												<th scope="row"><label for="billingFax">BILLING FAX CODE</label></th>
+												<td><input type="text" class="commtext" id="billingFax"></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!-- /sub content -->
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<!-- /global container -->
+		<!--#include file="/include/_side_cart.html" -->
+		<!--#include file="/include/_footer.html" -->
+		<!--#include file="/include/_foot.html" -->
+	</div>
+	<!-- /global wrap -->
+</body>
+</html>
