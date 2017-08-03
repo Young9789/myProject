@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>eLAMBS SHOP - Cart</title>
+	<!-- global head resource -->
+	<!-- <link rel="shortcut icon" href="images/favicon.ico">
+<link rel="icon" href="images/favicon-16.png" sizes="16x16">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32">
+<link rel="icon" href="images/favicon-64.png" sizes="64x64">
+<link rel="icon" href="images/favicon-128.png" sizes="128x128"> -->
+	<link rel="stylesheet" type="text/css" href="css/common.min.css">
+	<!-- /global head resource -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!-- global header -->
+		<div id="gHeader" class="g_header">
+			<div class="g_header_wrap">
+				<div class="g_header_content">
+					<h1 class="g_logo"><a class="link" href="/"><img src="images/logo.png" alt="eLAMBS SHOP"></a></h1>
+					<div class="g_header_top">
+						<div class="g_header_top__inn">
+							<form class="g_search">
+								<fieldset>
+									<legend hidden>search</legend>
+									<button class="spr_common g_search__icon">submit</button>
+									<input name="keyword" class="g_search__input" type="text" title="insert search keyword" placeholder="Search...">
+								</fieldset>
+							</form>
+							<ul class="g_side">
+								<li class="g_side__item tooltip_wrap">
+									<a class="txt" href="#">Hello, Hyebeen <span class="tooltip_ico"></span></a>
+									<div class="tooltip">
+										<div class="tooltip__content">
+											<ul class="tooltip_menu">
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link">My Account</a>
+												</li>
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link">Sales Order History</a>
+												</li>
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link">Favorites</a>
+												</li>
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link tooltip_menu__link--logout">Logout</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="g_side__item"><a class="txt" href="#">Login</a></li>
+								<!-- <li class="g_side__item g_side__item--heart"><a class="txt" href="#"><span class="spr_common"></span> (99)</a></li> -->
+								<li class="g_side__item g_side__item--bag"><a class="txt js_side_cart_toggle" href="#"><span class="spr_common"></span>(2)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="g_menu_wrap" id="gMenu">
+				<div class="g_menu_fixed">
+					<ul class="g_menu">
+						<li class="g_menu__item">
+							<a class="title" href="#">New Arrivals</a>
+							<ul class="g_menu_sub">
+								<li class="g_menu_sub__item"><a href="#">Sub Cate1</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate2</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate3</a></li>
+							</ul>
+						</li>
+						<li class="g_menu__item is-active">
+							<a class="title" href="#">Casual Dress</a>
+							<ul class="g_menu_sub">
+								<li class="g_menu_sub__item"><a href="#">Sub Cate1</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate2</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate3</a></li>
+							</ul>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Party Dress</a>
+							<ul class="g_menu_sub">
+								<li class="g_menu_sub__item"><a href="#">Sub Cate1</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate2</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate3</a></li>
+							</ul>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Maxi Dress</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Fashion Top</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Outer</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Bottom</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Romper &amp; Jumpsuit</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Set</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Plus Size</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Sale</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- /global header -->
+
+		<!-- global container -->
+		<div class="g_container">
+			<div class="category_depth">
+				<a href="#">Home</a> / <a href="#">Shopping Cart</a>
+			</div>
+
+			<div class="content">
+				<div class="page_header page_header--btn">
+					<h1 class="page_title">Shopping Cart</h1>
+					<div class="page_header__btns">
+						<button class="commbtn_s">delete</button>
+						<button class="commbtn_s_i">save for later</button>
+					</div>
+				</div>
+				<div class="cart_table">
+					<table>
+						<caption hidden>cart table</caption>
+						<thead>
+							<tr>
+								<th class="col_item" scope="col">ITEM</th>
+								<th class="col_color" scope="col">COLOR</th>
+								<th class="col_size" scope="col">SIZE</th>
+								<th class="col_pack" scope="col">PACK</th>
+								<th class="col_qty" scope="col">QTY</th>
+								<th class="col_up" scope="col">U/P</th>
+								<th class="col_amount" scope="col">AMOUNT</th>
+								<th class="col_select" scope="col"><label><input type="checkbox" class="commcheck" title="chioce product" data-check-all="cart_item_check"> ALL</label></th>
+							</tr>
+						</thead>
+						<!-- item area -->
+						<tbody>
+							<!-- item main info area -->
+							<tr>
+								<td class="col_item" rowspan="3">
+									<!-- rowspan = option(tr) length + 1(self) -->
+									<div class="cart_product_item">
+										<a href="#" class="thumb"><img src="images/demo/pdt_thumb_01.jpg" alt=""></a>
+										<div class="inner">
+											<a href="#" class="title">A1234567</a>
+											<div class="tip">This Item Is Unavailable.</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<!-- / item main info area -->
+							<!-- item option info area -->
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>00: <em>3</em></span>
+										<span>0: <em>3</em></span>
+										<span>2: <em>3</em></span>
+										<span>4: <em>3</em></span>
+										<span>6: <em>3</em></span>
+										<span>8: <em>3</em></span>
+										<span>10: <em>3</em></span>
+										<span>12: <em>3</em></span>
+										<span>14: <em>3</em></span>
+										<span>16: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td>
+									<label><input type="number" class="commtext input_pack" title="product count" value="1"></label>
+									<a href="#" class="btn_edit_count">UPDATE</a>
+								</td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">blk-Black/Black Sequence</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>XXS: <em>3</em></span>
+										<span>XS: <em>3</em></span>
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<span>XL: <em>3</em></span>
+										<span>XXL: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label><a href="#" class="btn_edit_count">UPDATE</a></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+							<!-- / item option info area -->
+						</tbody>
+						<!-- / item area -->
+						<tbody>
+							<tr>
+								<td class="col_item" rowspan="2">
+									<div class="cart_product_item">
+										<a href="#" class="thumb"><img src="images/demo/pdt_thumb_01.jpg" alt=""></a>
+										<div class="inner">
+											<a href="#" class="title">D0110ABCDEFGHIJKLMN</a>
+											<div class="tip">This Item Is Unavailable.</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Assorted-24 Black, Off White, Turquoise, Fuchsia</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>00: <em>3</em></span>
+										<span>0: <em>3</em></span>
+										<span>2: <em>3</em></span>
+										<span>4: <em>3</em></span>
+										<span>6: <em>3</em></span>
+										<span>8: <em>3</em></span>
+										<span>10: <em>3</em></span>
+										<span>12: <em>3</em></span>
+										<span>14: <em>3</em></span>
+										<span>16: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label><a href="#" class="btn_edit_count">UPDATE</a></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="col_item" rowspan="7">
+									<div class="cart_product_item">
+										<a href="#" class="thumb"><img src="images/demo/pdt_thumb_01.jpg" alt=""></a>
+										<div class="inner">
+											<a href="#" class="title">D0110ABCDEFGHIJKLMN</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="col_item" rowspan="2">
+									<div class="cart_product_item">
+										<a href="#" class="thumb"><img src="images/demo/pdt_thumb_01.jpg" alt=""></a>
+										<div class="inner">
+											<a href="#" class="title">D0110ABCDEFGHIJKLMN</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>00: <em>3</em></span>
+										<span>0: <em>3</em></span>
+										<span>2: <em>3</em></span>
+										<span>4: <em>3</em></span>
+										<span>6: <em>3</em></span>
+										<span>8: <em>3</em></span>
+										<span>10: <em>3</em></span>
+										<span>12: <em>3</em></span>
+										<span>14: <em>3</em></span>
+										<span>16: <em>3</em></span>
+										<a href="#" class="btn_edit_size" data-layer-open="#countingSizeLayer">EDIT</a>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1" disabled></label></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_item_check"></label></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<ul class="order_total">
+					<li class="order_total__item"><span class="label">total quantity</span><span class="value">12</span></li>
+					<li class="order_total__item"><span class="label">sub total</span><span class="value">$240.00</span></li>
+					<li class="order_total__item"><span class="label">grand total</span><span class="value total">$254.00</span></li>
+				</ul>
+				<div class="commbtn_group commbtn_group--bdr">
+					<button class="commbtn_l submit_btn left">continue shopping</button>
+					<button class="commbtn_l_i submit_btn right">proceed to checkout</button>
+				</div>
+				<div class="page_header page_header--middle">
+					<h1 class="page_title">Saved For Later Item(s)</h1>
+					<div class="page_header__btns">
+						<button class="commbtn_s">delete</button>
+						<button class="commbtn_s_i">move to cart</button>
+					</div>
+				</div>
+				<div class="cart_table">
+					<table>
+						<caption hidden>cart table</caption>
+						<thead>
+							<tr>
+								<th class="col_item" scope="col">ITEM</th>
+								<th class="col_color" scope="col">COLOR</th>
+								<th class="col_size" scope="col">SIZE</th>
+								<th class="col_pack" scope="col">PACK</th>
+								<th class="col_qty" scope="col">QTY</th>
+								<th class="col_up" scope="col">U/P</th>
+								<th class="col_amount" scope="col">AMOUNT</th>
+								<th class="col_select" scope="col"><label><input type="checkbox" class="commcheck" title="chioce product" data-check-all="cart_saved_check"> ALL</label></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col_item" rowspan="3">
+									<div class="cart_product_item">
+										<a href="#" class="thumb"><img src="images/demo/pdt_thumb_01.jpg" alt=""></a>
+										<div class="inner">
+											<a href="#" class="title">A1234567</a>
+											<div class="tip">This Item Is Unavailable.</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>00: <em>3</em></span>
+										<span>0: <em>3</em></span>
+										<span>2: <em>3</em></span>
+										<span>4: <em>3</em></span>
+										<span>6: <em>3</em></span>
+										<span>8: <em>3</em></span>
+										<span>10: <em>3</em></span>
+										<span>12: <em>3</em></span>
+										<span>14: <em>3</em></span>
+										<span>16: <em>3</em></span>
+									</div>
+								</td>
+								<td>
+									<label><input type="number" class="commtext input_pack" title="product count" value="1"></label>
+									<!-- <a href="#" class="btn_edit_count">UPDATE</a> -->
+								</td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_saved_check"></label></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>XXXS: <em>3</em></span>
+										<span>XXS: <em>3</em></span>
+										<span>XS: <em>3</em></span>
+										<span>S: <em>3</em></span>
+										<span>M: <em>3</em></span>
+										<span>L: <em>3</em></span>
+										<span>XL: <em>3</em></span>
+										<span>XXL: <em>3</em></span>
+										<span>XXXL: <em>3</em></span>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label>
+									<!-- <a href="#" class="btn_edit_count">UPDATE</a> --></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_saved_check"></label></td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td class="col_item" rowspan="2">
+									<div class="cart_product_item">
+										<a href="#" class="thumb"><img src="images/demo/pdt_thumb_01.jpg" alt=""></a>
+										<div class="inner">
+											<a href="#" class="title">D0110ABCDEFGHIJKLMN</a>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="color_name">Blue/Yell/Mint/Fucsh</div>
+								</td>
+								<td>
+									<div class="size_list">
+										<span>00: <em>3</em></span>
+										<span>0: <em>3</em></span>
+										<span>2: <em>3</em></span>
+										<span>4: <em>3</em></span>
+										<span>6: <em>3</em></span>
+										<span>8: <em>3</em></span>
+										<span>10: <em>3</em></span>
+										<span>12: <em>3</em></span>
+										<span>14: <em>3</em></span>
+										<span>16: <em>3</em></span>
+									</div>
+								</td>
+								<td><label><input type="number" class="commtext input_pack" title="product count" value="1"></label>
+									<!-- <a href="#" class="btn_edit_count">UPDATE</a> --></td>
+								<td>6</td>
+								<td><span class="price">$20.00</span></td>
+								<td><span class="price">$12,123.00</span></td>
+								<td><label><input type="checkbox" class="commcheck" title="chioce product" data-check="cart_saved_check"></label></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- /global container -->
+		<div class="side_cart" id="sideCart">
+			<div class="side_cart__inner">
+				<div class="side_cart__head">
+					<div class="side_cart_title">
+						CART
+						<a href="#" class="side_cart_title__link"><span>View Cart</span><i class="ico"></i></a>
+					</div>
+					<div class="side_cart_info">
+						<a href="#" class="commbtn_m_i btn_view_cart">Proceed To Checkout</a>
+						<ul class="side_total">
+							<li class="side_total__item">Qty <span class="qty">123</span></li>
+							<li class="side_total__item">Sub Total <span class="total">$999,999.00</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="side_cart__cont">
+					<ul class="side_list">
+						<li class="side_list__item">
+							<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_01.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S:2</span> <span>M:2</span> <span>L:2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+						</li>
+						<li class="side_list__item">
+							<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_02.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+						</li>
+						<li class="side_list__item">
+							<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_02.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+						</li>
+						<!-- <li class="side_list__item">
+					<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_03.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<p class="info">
+							BLUE<br>
+							S:2 M:2 L:2<br>
+							Pack: 1 Quantity: 6
+						</p>
+						<strong class="price">$258.00</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+				</li> -->
+					</ul>
+					<p class="side_cart_blank">
+						<span class="spr_common">&nbsp;</span> No items in your shopping bag.
+					</p>
+
+				</div>
+			</div>
+		</div>
+		<!-- global footer -->
+		<footer id="gFooter" class="g_footer">
+			<div class="g_footer__inner">
+				<div class="ft_info">
+					<h2 class="ft_logo"><img src="images/logo2.png" alt="eLAMBS SHOP"></h2>
+					<ul class="ft_info_list">
+						<li class="ft_info_list__item">726 E. 12th St #306 Los Angeles, CA 90021</li>
+						<li class="ft_info_list__item">T. 213-745-2665</li>
+						<li class="ft_info_list__item">E. info@compsolution.net</li>
+					</ul>
+				</div>
+				<ul class="ft_menu">
+					<li class="ft_menu_group">
+						<h3 class="ft_title">Company</h3>
+						<ul class="ft_menu_list">
+							<li class="ft_menu_list__item"><a href="#">About Us</a></li>
+							<li class="ft_menu_list__item"><a href="#">Contact Us</a></li>
+							<li class="ft_menu_list__item"><a href="#">Show Info</a></li>
+							<li class="ft_menu_list__item"><a href="#">Style Book</a></li>
+						</ul>
+					</li>
+					<li class="ft_menu_group">
+						<h3 class="ft_title">Help</h3>
+						<ul class="ft_menu_list">
+							<li class="ft_menu_list__item"><a href="#">Customer Service</a></li>
+							<li class="ft_menu_list__item"><a href="#">FAQ</a></li>
+							<li class="ft_menu_list__item"><a href="#">Privacy Policy</a></li>
+							<li class="ft_menu_list__item"><a href="#">Terms and Conditions</a></li>
+						</ul>
+					</li>
+					<li class="ft_menu_group">
+						<h3 class="ft_title">My Account</h3>
+						<ul class="ft_menu_list">
+							<li class="ft_menu_list__item"><a href="#">My Information</a></li>
+							<li class="ft_menu_list__item"><a href="#">Sales Order History</a></li>
+							<li class="ft_menu_list__item"><a href="#">Invoice History</a></li>
+						</ul>
+					</li>
+					<li class="ft_menu_group ft_menu_group--email">
+						<h3 class="ft_title">Subscribe To Our News</h3>
+						<fieldset class="subcribe_email">
+							<input class="subcribe_email__input" type="text" placeholder="E-mail">
+							<button class="subcribe_email__btn">Submit</button>
+						</fieldset>
+						<span class="subcribe_email__tip">Sign up for the latest style tips, news and exclusive promotional offers.</span>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_copyright">
+				<div class="g_footer__inner">
+					<ul class="g_sns">
+						<li class="g_sns__item"><a href="#"><img src="images/demo/ico_facebook.png" alt=""></a></li>
+						<li class="g_sns__item"><a href="#"><img src="images/demo/ico_twitter.png" alt=""></a></li>
+						<li class="g_sns__item"><a href="#"><img src="images/demo/ico_instagram.png" alt=""></a></li>
+						<!-- <li class="g_sns__item"><a href="#"><img src="images/demo/ico_issue.png" alt=""></a></li>
+				<li class="g_sns__item"><a href="#"><img src="images/demo/ico_blogger.png" alt=""></a></li>
+				<li class="g_sns__item"><a href="#"><img src="images/demo/ico_youtube.png" alt=""></a></li> -->
+					</ul>
+					<p class="copy">elambsshop.com All Rights Reserved © 2017 Designed by Compsolution</p>
+					<div class="ft_seal">
+						<!-- seal dark -->
+						<span id="siteseal" class="ft_seal__item"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=lTaPM2Q895M88dxIrtrUhYNeD3BdRRjDKsJ7PDnH6CwL97x3wtuAeVjbkNSZ"></script></span>
+						<!-- seal bright 
+				<span id="siteseal" class="ft_seal__item"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=3bbIoS1OOmTh2lUtPjuivdz8v7vDUUX7ChIOHfhD4TZ7bluHddWuLZRzaEqO"></script></span>-->
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /global footer -->
+		<!-- global foot resource -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/ui_common.min.js"></script>
+		<!-- /global foot resource -->
+	</div>
+	<!-- /global wrap -->
+	<div class="layer_container" id="countingSizeLayer">
+		<div class="layer_content">
+			<div class="content content--layer">
+				<h2 class="layer_title">EDIT QUANTITES</h2>
+				<table class="edit_count_table">
+					<caption hidden>change size count</caption>
+					<thead>
+						<tr>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+							<td><input type="number" class="commtext" value="1"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="commbtn_group">
+					<button class="commbtn_s_i right">update</button>
+					<button class="commbtn_s_d right" data-layer-close="#countingSizeLayer">cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

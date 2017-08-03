@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>eLAMBS SHOP - Products Search Result</title>
+	<!-- global head resource -->
+	<!-- <link rel="shortcut icon" href="images/favicon.ico">
+<link rel="icon" href="images/favicon-16.png" sizes="16x16">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32">
+<link rel="icon" href="images/favicon-64.png" sizes="64x64">
+<link rel="icon" href="images/favicon-128.png" sizes="128x128"> -->
+	<link rel="stylesheet" type="text/css" href="css/common.min.css">
+	<!-- /global head resource -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!-- global header -->
+		<div id="gHeader" class="g_header">
+			<div class="g_header_wrap">
+				<div class="g_header_content">
+					<h1 class="g_logo"><a class="link" href="/"><img src="images/logo.png" alt="eLAMBS SHOP"></a></h1>
+					<div class="g_header_top">
+						<div class="g_header_top__inn">
+							<form class="g_search">
+								<fieldset>
+									<legend hidden>search</legend>
+									<button class="spr_common g_search__icon">submit</button>
+									<input name="keyword" class="g_search__input" type="text" title="insert search keyword" placeholder="Search...">
+								</fieldset>
+							</form>
+							<ul class="g_side">
+								<li class="g_side__item tooltip_wrap">
+									<a class="txt" href="#">Hello, Hyebeen <span class="tooltip_ico"></span></a>
+									<div class="tooltip">
+										<div class="tooltip__content">
+											<ul class="tooltip_menu">
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link">My Account</a>
+												</li>
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link">Sales Order History</a>
+												</li>
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link">Favorites</a>
+												</li>
+												<li class="tooltip_menu__item">
+													<a href="#" class="tooltip_menu__link tooltip_menu__link--logout">Logout</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="g_side__item"><a class="txt" href="#">Login</a></li>
+								<!-- <li class="g_side__item g_side__item--heart"><a class="txt" href="#"><span class="spr_common"></span> (99)</a></li> -->
+								<li class="g_side__item g_side__item--bag"><a class="txt js_side_cart_toggle" href="#"><span class="spr_common"></span>(2)</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="g_menu_wrap" id="gMenu">
+				<div class="g_menu_fixed">
+					<ul class="g_menu">
+						<li class="g_menu__item">
+							<a class="title" href="#">New Arrivals</a>
+							<ul class="g_menu_sub">
+								<li class="g_menu_sub__item"><a href="#">Sub Cate1</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate2</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate3</a></li>
+							</ul>
+						</li>
+						<li class="g_menu__item is-active">
+							<a class="title" href="#">Casual Dress</a>
+							<ul class="g_menu_sub">
+								<li class="g_menu_sub__item"><a href="#">Sub Cate1</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate2</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate3</a></li>
+							</ul>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Party Dress</a>
+							<ul class="g_menu_sub">
+								<li class="g_menu_sub__item"><a href="#">Sub Cate1</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate2</a></li>
+								<li class="g_menu_sub__item"><a href="#">Sub Cate3</a></li>
+							</ul>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Maxi Dress</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Fashion Top</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Outer</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Bottom</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Romper &amp; Jumpsuit</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Set</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Plus Size</a>
+						</li>
+						<li class="g_menu__item">
+							<a class="title" href="#">Sale</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- /global header -->
+
+		<!-- global container -->
+		<div class="g_container">
+
+			<!-- side content -->
+			<div class="content_side">
+				<div class="content_side__group content_side__group--menu">
+					<strong class="content_side__title">Flower Girl</strong>
+					<ul class="opt_list">
+						<!-- 선택된 카테고리 is-active -->
+						<li class="opt_list__item is-active"><a href="#">Top</a></li>
+						<li class="opt_list__item"><a href="#">Bottom</a></li>
+					</ul>
+				</div>
+				<div class="content_side__group">
+					<strong class="content_side__title">Filter By Price</strong>
+					<div class="price_filter">
+						<!--
+							data-slider 속성은 슬라이더의 범위를 지정하고 이벤트를 삽입합니다.
+							data-slider-default 속성은 선택된 범위 값을 지정합니다.
+							#price_option_slider 내부 구조는 필수적으로 유지되어야 합니다.
+							[data-slider] 요소에 change 이벤트, 그리고 $('[data-slider]').data('sliderNow')에서 현재 상태값을 확인할 수 있습니다.
+							data-slider="{'start':0,'end':0}" 과 같을경우 슬라이더가 비활성화 됩니다.
+						-->
+						<div id="price_option_slider" data-slider="{'start':0,'end':100}" data-slider-default="{'start':10,'end':100}">
+							<div class="option_slider">
+								<div class="track">
+									<button class="btn" data-slider-btn="start" data-slider-value="0">*</button>
+									<button class="btn" data-slider-btn="end" data-slider-value="100">*</button>
+									<div class="track_inner"></div>
+								</div>
+							</div>
+							<div class="option_slider_value js_price_value">PRICE: $<span class="js_start">00</span> - $<span class="js_end">00</span></div>
+						</div>
+					</div>
+					<div class="side_btn_group side_btn_group--d">
+						<button class="commbtn_s_w">apply</button><button class="commbtn_s">clear</button>
+					</div>
+				</div>
+				<div class="content_side__group">
+					<strong class="content_side__title">MORE WAYS TO SHOP</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><label class="commlabel"><input type="checkbox" value="" class="commcheck">Re-Order</label></li>
+						<li class="opt_list__item"><label class="commlabel"><input type="checkbox" value="" class="commcheck">In stock only</label></li>
+						<li class="opt_list__item"><label class="commlabel"><input type="checkbox" value="" class="commcheck">Sale items</label></li>
+					</ul>
+					<div class="side_btn_group">
+						<button class="commbtn_s_w">clear filter</button>
+					</div>
+				</div>
+				<div class="content_side__banner">
+					<a href="#"><img src="images/banner/content_side_banner.jpg" alt="banner"></a>
+				</div>
+			</div>
+			<!-- / side content -->
+			<!-- sub content -->
+			<div class="content content--sub">
+				<!-- <h2 class="search_result_txt">SEARCH RESULT FOR <span class="keyword">"Key Word"</span> : <span class="count">5 ITEMS</span> FOUND.</h2>  -->
+				<div class="page_header">
+					<h1 class="page_title">Search Result For <span class="keyword">"Key Word KEY"</span> : <span class="count">5 ITEMS</span> FOUND.</h1>
+					<!-- 16-11-14 요소 추가 -->
+				</div>
+				<div class="product_list_option">
+					<ul class="option_list option_list--left">
+						<li class="option_list__item">
+							<label for="listSort" class="commlabel_input">SORT BY</label>
+							<select name="" id="listSort" title="select sort" class="commselect commselect--sort">
+								<option value="New" selected>New</option>
+								<option value="Price Low-High">Price Low-High</option>
+								<option value="Price High-Low">Price High-Low</option>
+								<option value="Style No.">Style No.</option>
+							</select>
+						</li>
+					</ul>
+					<ul class="option_list">
+						<!-- data-list-type-toggle 속성으로 기능 정의, 리스트 타입이 변경됩니다. -->
+						<li class="option_list__item"><button class="commbtn_s_w btn_list_thumb is-active" data-list-type-toggle="thumb"><span class="spr_common"></span></button></li>
+						<li class="option_list__item"><button class="commbtn_s_w btn_list_normal" data-list-type-toggle="normal"><span class="spr_common"></span></button></li>
+					</ul>
+					<ul class="option_list">
+						<li class="option_list__item">
+							<label for="listCount" class="commlabel_input">ITEM PER PAGE</label>
+							<select name="" id="listCount" title="select item count" class="commselect commselect--count">
+								<option value="12" selected>12</option>
+								<option value="16">16</option>
+								<option value="20">20</option>
+								<option value="24">24</option>
+								<option value="28">28</option>
+								<option value="32">32</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<!-- product list -->
+				<div class="product_list_wrap">
+					<!-- data-list-type="normal" 적용시 가로 리스트 모드 적용 -->
+					<ul class="product_list" data-list-type="thumb">
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<!-- 클릭 활성화 is-active -->
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''ELBOW SLEEVE V NECK TOP*BODY
+										LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<!-- 클릭 활성화 is-active -->
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+								<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li><button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button></li>
+									<li><button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="product_item">
+							<a href="#" class="product_item__thumb">
+								<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+							</a>
+							<div class="product_item__info">
+								<a href="#" class="product_item__title">P123123</a>
+								<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+								<ul class="product_item__detail">
+									<li><strong>Color</strong>: GRY-charcoal</li>
+									<li><strong>Size</strong>: S/L/X</li>
+									<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+								</ul>
+								<ul class="product_item__menu">
+									<li>
+										<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+									</li>
+									<li>
+										<!-- 클릭 활성화 is-active -->
+										<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- / product list -->
+
+				<!-- pagination -->
+				<div class="pagination">
+					<a href="#" class="pagination__prev">&lt;</a>
+					<span class="is-active">1</span>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+					<a href="#" class="pagination__next">&gt;</a>
+					<p class="pagination__info">SHOWING 1-4 OF 4 RESULTS</p>
+				</div>
+				<!-- /pagination -->
+
+			</div>
+			<!-- /sub content -->
+		</div>
+		<!-- /global container -->
+		<!-- container bottom sale product -->
+		<div class="product_list_wrap product_list_wrap--sale">
+			<h3 class="box_title"><span class="name">WOMENS</span> BEST SALE ITEMS</h3>
+			<ul class="product_list product_list--sale">
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_04.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_02.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<img src="images/demo/pdt_thumb_01.jpg" alt="product image">
+						<img src="images/demo/pdt_thumb_03.jpg" alt="product image">
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: MARLED TWO TONE FRENCH TERRY SHORTS W/ DRAWSTRING &amp; POCKETS</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+				<li class="product_item">
+					<a href="#" class="product_item__thumb">
+						<span class="common_noimg"><span class="spr_common">NO IMAGE</span></span>
+					</a>
+					<a href="#" class="product_item__title">P123123</a>
+					<strong class="product_item__price"><span class="sale">100$</span><del class="discount">$120.00</del></strong>
+					<ul class="product_item__detail">
+						<li><strong>Color</strong>: GRY-charcoal</li>
+						<li><strong>Size</strong>: S/L/X</li>
+						<li><strong>Description</strong>: ELBOW SLEEVE V NECK TOP*BODY LENGTH: S-24'', M-24.5'', L-25''*SLEEVE LENGTH: S-11'', M-11.25''</li>
+					</ul>
+					<ul class="product_item__menu">
+						<li>
+							<button class="btn_quick btn_quick--detail js_quick_view"><span class="spr_common">Quick View</span></button>
+						</li>
+						<li>
+							<!-- 클릭 활성화 is-active -->
+							<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- /container bottom sale product -->
+		<div class="side_cart" id="sideCart">
+			<div class="side_cart__inner">
+				<div class="side_cart__head">
+					<div class="side_cart_title">
+						CART
+						<a href="#" class="side_cart_title__link"><span>View Cart</span><i class="ico"></i></a>
+					</div>
+					<div class="side_cart_info">
+						<a href="#" class="commbtn_m_i btn_view_cart">Proceed To Checkout</a>
+						<ul class="side_total">
+							<li class="side_total__item">Qty <span class="qty">123</span></li>
+							<li class="side_total__item">Sub Total <span class="total">$999,999.00</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="side_cart__cont">
+					<ul class="side_list">
+						<li class="side_list__item">
+							<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_01.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S:2</span> <span>M:2</span> <span>L:2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+						</li>
+						<li class="side_list__item">
+							<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_02.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+						</li>
+						<li class="side_list__item">
+							<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_02.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+							<dl class="side_option_list">
+								<dt class="side_option_list--title">BLUE</dt>
+								<dd class="side_option_list--size">
+									<span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span> <span>S: 2</span> <span>M: 2</span> <span>L: 2</span>
+								</dd>
+								<dd class="side_option_list--count">Pack: <span class="value">1</span></dd>
+								<dd class="side_option_list--count">Qty: <span class="value">6</span></dd>
+								<dd class="side_option_list--total">$360.0</dd>
+								<dd><button class="spr_common btn_del_option">DEL</button></dd>
+							</dl>
+						</li>
+						<!-- <li class="side_list__item">
+					<a href="#" class="side_cart_item">
+						<span class="image"><img src="images/demo/pdt_thumb_03.jpg" alt="product image"></span>
+						<strong class="code">D10012</strong>
+						<p class="info">
+							BLUE<br>
+							S:2 M:2 L:2<br>
+							Pack: 1 Quantity: 6
+						</p>
+						<strong class="price">$258.00</strong>
+						<button class="commbtn_s btn_del_item"><span class="spr_common">delete</span></button>
+					</a>
+				</li> -->
+					</ul>
+					<p class="side_cart_blank">
+						<span class="spr_common">&nbsp;</span> No items in your shopping bag.
+					</p>
+
+				</div>
+			</div>
+		</div>
+		<!-- global footer -->
+		<footer id="gFooter" class="g_footer">
+			<div class="g_footer__inner">
+				<div class="ft_info">
+					<h2 class="ft_logo"><img src="images/logo2.png" alt="eLAMBS SHOP"></h2>
+					<ul class="ft_info_list">
+						<li class="ft_info_list__item">726 E. 12th St #306 Los Angeles, CA 90021</li>
+						<li class="ft_info_list__item">T. 213-745-2665</li>
+						<li class="ft_info_list__item">E. info@compsolution.net</li>
+					</ul>
+				</div>
+				<ul class="ft_menu">
+					<li class="ft_menu_group">
+						<h3 class="ft_title">Company</h3>
+						<ul class="ft_menu_list">
+							<li class="ft_menu_list__item"><a href="#">About Us</a></li>
+							<li class="ft_menu_list__item"><a href="#">Contact Us</a></li>
+							<li class="ft_menu_list__item"><a href="#">Show Info</a></li>
+							<li class="ft_menu_list__item"><a href="#">Style Book</a></li>
+						</ul>
+					</li>
+					<li class="ft_menu_group">
+						<h3 class="ft_title">Help</h3>
+						<ul class="ft_menu_list">
+							<li class="ft_menu_list__item"><a href="#">Customer Service</a></li>
+							<li class="ft_menu_list__item"><a href="#">FAQ</a></li>
+							<li class="ft_menu_list__item"><a href="#">Privacy Policy</a></li>
+							<li class="ft_menu_list__item"><a href="#">Terms and Conditions</a></li>
+						</ul>
+					</li>
+					<li class="ft_menu_group">
+						<h3 class="ft_title">My Account</h3>
+						<ul class="ft_menu_list">
+							<li class="ft_menu_list__item"><a href="#">My Information</a></li>
+							<li class="ft_menu_list__item"><a href="#">Sales Order History</a></li>
+							<li class="ft_menu_list__item"><a href="#">Invoice History</a></li>
+						</ul>
+					</li>
+					<li class="ft_menu_group ft_menu_group--email">
+						<h3 class="ft_title">Subscribe To Our News</h3>
+						<fieldset class="subcribe_email">
+							<input class="subcribe_email__input" type="text" placeholder="E-mail">
+							<button class="subcribe_email__btn">Submit</button>
+						</fieldset>
+						<span class="subcribe_email__tip">Sign up for the latest style tips, news and exclusive promotional offers.</span>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_copyright">
+				<div class="g_footer__inner">
+					<ul class="g_sns">
+						<li class="g_sns__item"><a href="#"><img src="images/demo/ico_facebook.png" alt=""></a></li>
+						<li class="g_sns__item"><a href="#"><img src="images/demo/ico_twitter.png" alt=""></a></li>
+						<li class="g_sns__item"><a href="#"><img src="images/demo/ico_instagram.png" alt=""></a></li>
+						<!-- <li class="g_sns__item"><a href="#"><img src="images/demo/ico_issue.png" alt=""></a></li>
+				<li class="g_sns__item"><a href="#"><img src="images/demo/ico_blogger.png" alt=""></a></li>
+				<li class="g_sns__item"><a href="#"><img src="images/demo/ico_youtube.png" alt=""></a></li> -->
+					</ul>
+					<p class="copy">elambsshop.com All Rights Reserved © 2017 Designed by Compsolution</p>
+					<div class="ft_seal">
+						<!-- seal dark -->
+						<span id="siteseal" class="ft_seal__item"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=lTaPM2Q895M88dxIrtrUhYNeD3BdRRjDKsJ7PDnH6CwL97x3wtuAeVjbkNSZ"></script></span>
+						<!-- seal bright 
+				<span id="siteseal" class="ft_seal__item"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=3bbIoS1OOmTh2lUtPjuivdz8v7vDUUX7ChIOHfhD4TZ7bluHddWuLZRzaEqO"></script></span>-->
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- /global footer -->
+		<!-- global foot resource -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/ui_common.min.js"></script>
+		<!-- /global foot resource -->
+	</div>
+	<!-- /global wrap -->
+	<div class="layer_container" id="productLayer">
+		<div class="layer_content">
+			<button class="btn_layer_close spr_common js_quick_close">close layer</button>
+			<div class="content content--layer_pdct">
+				<div class="img_container">
+					<!-- 활성화시 is-active -->
+					<button class="btn_quick btn_quick--heart is-active"><span class="spr_common">HEART</span></button>
+					<span class="magnifier_container js_big_image"><span class="inner"></span></span>
+					<ul class="thumb_list">
+						<!-- 
+					[data-big-image] 객체의 href는 상위 큰이미지,
+					data-big-image 속성 값은 확대될 이미지 url 입니다.
+				 -->
+						<li class="thumb_list__item"><a href="images/demo/pdt_image01.jpg" data-big-image="images/demo/pdt_image01.jpg"><img src="images/demo/pdt_image01.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image02.jpg" data-big-image="images/demo/pdt_image02.jpg"><img src="images/demo/pdt_image02.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image03.jpg" data-big-image="images/demo/pdt_image03.jpg"><img src="images/demo/pdt_image03.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image04.jpg" data-big-image="images/demo/pdt_image04.jpg"><img src="images/demo/pdt_image04.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image01.jpg" data-big-image="images/demo/pdt_image01.jpg"><img src="images/demo/pdt_image01.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image02.jpg" data-big-image="images/demo/pdt_image02.jpg"><img src="images/demo/pdt_image02.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image03.jpg" data-big-image="images/demo/pdt_image03.jpg"><img src="images/demo/pdt_image03.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image04.jpg" data-big-image="images/demo/pdt_image04.jpg"><img src="images/demo/pdt_image04.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image01.jpg" data-big-image="images/demo/pdt_image01.jpg"><img src="images/demo/pdt_image01.jpg" alt=""></a></li>
+						<li class="thumb_list__item"><a href="images/demo/pdt_image02.jpg" data-big-image="images/demo/pdt_image02.jpg"><img src="images/demo/pdt_image02.jpg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="info_container">
+					<!-- 하트 활성화 : is-active -->
+					<h1 class="product_title">D123111</h1>
+					<span class="product_price"><span class="sale">$32.00</span> <span class="normal">$32.00</span> <del class="discount">$100.00</del></span>
+					<p class="product_state">
+						AVAILABILITY : Future Item <span class="available">(Available Date: <span class="date">01/15/2017</span>)</span>
+						<!-- AVAILABILITY : <span class="out_of_stock">Out of Stock</span> -->
+					</p>
+					<div class="simple_dct">
+						<h3 class="simple_dct__title">DESCRIPTION</h3>
+						<div class="simple_dct__content">
+							<p>
+								Your high-waisted bottoms shouldn't be limited to tucked-in tops.<br> This short-sleeved blouse is a great
+							</p>
+							<ul class="marker_list">
+								<li class="marker_item">PABRIC : <span class="marker_item__value">100% eLAMBS SHOPyester</span></li>
+								<li class="marker_item">PABRIC : <span class="marker_item__value">100% eLAMBS SHOPyester</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="product_options">
+						<div class="option_header">
+							<!-- <h3 class="option_header__title"><span class="spr_common"></span>PURCHASE ALL COLORS</h3> -->
+							<h3 class="option_header__sale">EVEN COLOR SALE ONLY<span class="ico_circel_arrow"><span class="spr_common">&gt;</span></span>
+							</h3>
+							<div class="option_header__right">
+								<label for="inputPack" class="commlabel_input">Purchase all colors : </label><input id="inputPack" type="number" class="commtext input_pack" value="10">
+								<!-- <label for="inputPack" class="commlabel_input">Pack : </label><input id="inputPack" type="text" readonly class="commtext input_pack"> -->
+							</div>
+						</div>
+						<div class="option_table">
+							<table>
+								<thead>
+									<tr>
+										<th scope="col" class="left_col">COLOR</th>
+										<th scope="col" class="col">S</th>
+										<th scope="col" class="col">M</th>
+										<th scope="col" class="col">L</th>
+										<th scope="col" class="col_pack">PACK</th>
+										<th scope="col" class="col_qty">QTY</th>
+										<th scope="col" class="col_amt">AMT</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td class="total_txt left_col" colspan="5">TOTAL AMOUNT</td>
+										<td>30</td>
+										<td><span class="total_price">$13.220.00</span></td>
+									</tr>
+								</tfoot>
+								<tbody class="group_line">
+									<tr>
+										<td class="left_col">PACK SALE</td>
+										<td>2</td>
+										<td>2</td>
+										<td>2</td>
+										<td>1</td>
+										<td>6</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td class="left_col">YELLOW</td>
+										<td>1</td>
+										<td>1</td>
+										<td>1</td>
+										<td><input type="number" class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+									<tr>
+										<td class="left_col">YELLOW</td>
+										<td><input type="number" disabled class="commtext"></td>
+										<td><input type="number" disabled class="commtext"></td>
+										<td><input type="number" disabled class="commtext"></td>
+										<td><input type="number" disabled class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+									<tr>
+										<td class="left_col">CRL-BLACK/NEON CORAL</td>
+										<td><input type="number" class="commtext"></td>
+										<td><input type="number" class="commtext"></td>
+										<td><input type="number" class="commtext"></td>
+										<td><input type="number" class="commtext input_pack"></td>
+										<td>17</td>
+										<td>$30.277.00</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- 						내용이 많은 경우 예제
+						<table>
+							<thead>
+								<tr>
+									<th class="left_col">COLOR</th>
+									<th class="col">S</th>
+									<th class="col">M</th>
+									<th class="col">L</th>
+									<th class="col">S</th>
+									<th class="col">M</th>
+									<th class="col">L</th>
+									<th class="col">L</th>
+									<th class="col">L</th>
+									<th class="col">L</th>
+									<th class="col">L</th>
+									<th class="col">L</th>
+									<th class="col_pack">PACK</th>
+									<th class="col_qty">QTY</th>
+									<th class="col_amt">AMT</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td class="total_txt left_col" colspan="13">TOTAL AMOUNT</td>
+									<td>30</td>
+									<td><span class="total_price">$13.220.00</span></td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td class="left_col">YELLOW</td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext input_pack"></td>
+									<td>17</td>
+									<td>$30.277.00</td>
+								</tr>
+								<tr>
+									<td class="left_col">CRL-BLACK/NEON CORAL</td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext"></td>
+									<td><input type="text" class="commtext input_pack"></td>
+									<td>17</td>
+									<td>$30.277.00</td>
+								</tr>
+							</tbody>
+						</table> -->
+						</div>
+					</div>
+					<div class="button_group_2col">
+						<a href="#" class="commbtn_l_i" data-layer-open="#layerConfirmation">ADD TO CART</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Confirm Layer -->
+	<div class="layer_container" id="layerConfirmation">
+		<div class="layer_content">
+			<div class="content content--layer">
+				<h2 class="layer_title">CONFIRMATION</h2>
+				<div class="layer_message">
+					<p>Items are sucessfully added to your shopping cart.</p>
+				</div>
+				<div class="commbtn_group">
+					<button class="commbtn_s_i right" data-layer-close="#layerConfirmation">continue shopping</button>
+					<button class="commbtn_s_d right">CHECK OUT</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Confirm Layer -->
+</body>
+
+</html>
