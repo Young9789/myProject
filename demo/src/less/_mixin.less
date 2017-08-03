@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+
+.clear_float {
+	&:after {
+		content: "";
+		clear: both;
+		display: block;
+		height: 0;
+		line-height: 0;
+		font-size: 0;
+		visibility: hidden;
+	}
+}
+
+.clear_text {
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-indent: -110%;
+	font-size: 0;
+	line-height: 0;
+	text-align: left;
+}
+
+/* global width */
+@g_width: 1200px;
+@g_max_width: 1920px;
+.g_width {
+	width: @g_width;
+	margin: 0 auto;
+}
+
+@brand_color: #840f0f;
+
+/* font */
+@normal_font: 'Montserrat', sans-serif;
+@weight_normal: 400;
+@weight_bold: 600;
+
+/* font color */
+@txt_base_color: #333;
+@txt_sub_color: #777777;
+@txt_extra_color: #c7c7c7;
+@txt_title_color: #000;
+@txt_accent_color: @brand_color;
+@txt_hover_color: #333333;
+@txt_error_color: #ff1854;
+@txt_price_color: #843737;
+
+/* border color */
+@border_heavy_color: #000;
+@border_light_color: #e4e4e4;
+
+/* normal btn color */
+@btn_normal_color: #999;
+@btn_normal_hover_color: darken(#999, 10%);
+@btn_normal_txt_color: #fff;
+@btn_normal_hover_txt_color: #fff;
+
+/* accent btn color */
+@btn_accent_color: #333;
+@btn_accent_hover_color: darken(#333, 10%);
+@btn_accent_txt_color: #fff;
+@btn_accent_hover_txt_color: #fff;
+
+/* dark btn color */
+@btn_dark_color: #666;
+@btn_dark_hover_color: darken(#666, 10%);
+@btn_dark_txt_color: #fff;
+@btn_dark_hover_txt_color: #fff;
+
+/* outline btn color */
+@btn_outline_color: #fff;
+@btn_outline_hover_color: darken(#fff, 10%);
+@btn_outline_txt_color: #555;
+@btn_outline_hover_txt_color: #777;
+
+/* txt color class */
+.txt_base_color { color: @txt_base_color; }
+.txt_sub_color { color: @txt_sub_color; }
+.txt_extra_color { color: @txt_extra_color; }
+.txt_title_color { color: @txt_title_color; }
+.txt_accent_color { color: @txt_accent_color; }
+.txt_hover_color { color: @txt_hover_color; }
+.txt_error_color { color: @txt_error_color; }
+.txt_price_color { color: @txt_price_color; }

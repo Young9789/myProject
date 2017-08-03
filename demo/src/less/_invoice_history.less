@@ -1,0 +1,105 @@
+
+/* invoice history table */
+.invoices_table {
+	border-top: 1px solid @border_light_color;
+	table {
+		min-width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+		margin: 0;
+		padding: 0;
+		.col_date { width: 141px; }
+		.col_id { width: 130px; }
+		.col_no { width: 120px; }
+		.col_amount { width: 120px; }
+		.col_balance { width: 120px; }
+		.col_status { width: 120px; }
+		.col_tracking { width: auto; }
+		th {
+			height: 15px;
+			padding: 7px 0;
+			background: #f0f0f0;
+			vertical-align: middle;
+			font-size: 12px;
+			line-height: 15px;
+			font-weight: @weight_normal;
+			text-align: center;
+		}
+		tfoot,
+		tbody {
+			tr{
+				td {
+					height: auto;
+					min-height: 46px;
+					padding: 15px 0;
+					box-sizing: border-box;
+					background: #fff;
+					vertical-align: middle;
+					border: 0;
+					word-break: break-all;
+					text-align: center;
+					font-size: 14px;
+					line-height: 16px;
+					color: @txt_sub_color;
+					border-bottom: 1px solid @border_light_color;
+					&.item {
+						text-align: left;
+						padding-left: 15px;
+					}
+				}
+			}
+			& tr:last-child {
+				td {
+					border-bottom: 0;
+				}
+			}
+			.price {
+				padding-right: 30px;
+				text-align: right;
+			}
+			.info {
+				text-align: left;
+			}
+
+		}
+		tfoot {
+			tr {
+				td {
+					border-top: 1px solid @border_light_color;
+					color: @txt_base_color;
+				}
+			}
+		}
+	}
+}
+
+.data_thumb {
+	display: inline-block;
+	width: 18px;
+	border: 1px solid #eee;
+	vertical-align: middle;
+	margin: -7px 4px -7px 0;
+	&:hover {
+		border: 1px solid #bbb;
+	}
+	.small_img {
+		width: 100%;
+		height: auto;
+		overflow: visible;
+		vertical-align: top;
+	}
+}
+.data_thumb_expand {
+	position: absolute;
+	z-index: 100;
+	left: 100%;
+	top: 100%;
+	display: block;
+	width: 98px;
+	margin: 0 4px 4px 0;
+	border: 1px solid @border_light_color;
+	img {
+		width: 100%;
+		vertical-align: top;
+	}
+}

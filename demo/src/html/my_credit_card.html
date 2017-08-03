@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=1240">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>eLAMBS SHOP - MY CREDIT CARD</title>
+	<!--#include file="/include/_head.html" -->
+</head>
+
+<body>
+	<!-- global wrap -->
+	<div id="gWrap" class="g_wrap">
+		<!--#include file="/include/_header.html" -->
+		<!-- global container -->
+		<div class="g_container">
+			<div class="category_depth">
+				<a href="#">Home</a> / <a href="#">My Account</a> / <a href="#">My Credit Card</a>
+			</div>
+
+			<!-- side content -->
+			<div class="content_side">
+				<div class="content_side__group content_side__group--menu">
+					<strong class="content_side__title">My Account</strong>
+					<ul class="opt_list">
+						<!-- 선택된 카테고리 is-active -->
+						<li class="opt_list__item is-active"><a href="#">Information</a></li>
+						<li class="opt_list__item"><a href="#">My Credit Card</a></li>
+					</ul>
+					<strong class="content_side__title">My Orders</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><a href="#">Sales Order History</a></li>
+						<li class="opt_list__item"><a href="#">Invoice History</a></li>
+						<li class="opt_list__item"><a href="#">Statement</a></li>
+						<li class="opt_list__item"><a href="#">Transactions</a></li>
+						<li class="opt_list__item"><a href="#">Invoiced Items</a></li>
+						<li class="opt_list__item"><a href="#">Unshipped Items</a></li>
+					</ul>
+					<strong class="content_side__title">My Items</strong>
+					<ul class="opt_list">
+						<li class="opt_list__item"><a href="#">Favorites</a></li>
+						<li class="opt_list__item"><a href="#">Recently Viewed Item</a></li>
+					</ul>
+					<strong class="content_side__title"><a href="#">Announcement</a></strong>
+				</div>
+			</div>
+			<!-- / side content -->
+			<!-- sub content -->
+			<div class="content content--sub">
+				<div class="page_header">
+					<h1 class="page_title">My Credit Card <span class="title_valid_txt">* Indicates required information</span></h1>
+				</div>
+				<p class="top_intro_txt">
+					Make your payment directly Credit Card. Please use your Credit Card reference or add new Credit Card information.<br>
+					Your order wont be shipped until the funds have cleared in our account.
+				</p>
+				<div class="form_table">
+					<table>
+						<caption hidden>account info</caption>
+						<tr>
+							<th scope="row"><label for="selectCard">select my credit card</label></th>
+							<td>
+								<select name="" class="commselect" id="selectCard">
+									<option value="Country">VISA/**** **** ****/03 2018/Compsolution[Default]</option>
+									<option value="123">123</option>
+									<option value="123">123</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="selectCardType">select card type <span class="require_txt">*</span></label></th>
+							<td>
+								<select name="" class="commselect" id="selectCardType">
+									<option value="Country">VISA</option>
+									<option value="123">123</option>
+									<option value="123">123</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="cardNumber">card number <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="cardNumber" value="1234123412341234"></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="nameOnCard">name on card <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="nameOnCard" ></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="expirationDate">expiration date <span class="require_txt">*</span></label></th>
+							<td>
+								<div class="form_column">
+									<div class="form_column__item">
+										<select name="" class="commselect" id="expirationDate">
+											<option value="1">12</option>
+										</select>
+									</div>
+									<div class="form_column__item">
+										<select name="" id="" class="commselect">
+											<option value="2017">2017</option>
+										</select>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="securityCode">security code <span class="require_txt">*</span></label></th>
+							<td>
+								<input type="text" class="commtext" id="securityCode">
+								<label for="myDefaultCard" class="commlabel commlabel--input_top"><input type="checkbox" id="myDefaultCard" class="commcheck">Make this my default credit card</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingAddress">billing address <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="billingAddress" ></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingCity">billing city <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="billingCity" ></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingState">billing state <span class="require_txt">*</span></label></th>
+							<td>
+								<select name="" class="commselect" id="billingState">
+									<option value="Country">lowa</option>
+									<option value="123">123</option>
+									<option value="123">123</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingZipCode">billing zipcode <span class="require_txt">*</span></label></th>
+							<td><input type="text" class="commtext" id="billingZipCode" ></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="billingCountry">billing country <span class="require_txt">*</span></label></th>
+							<td>
+								<select name="" class="commselect" id="billingCountry">
+									<option value="Country">United States</option>
+									<option value="123">123</option>
+									<option value="123">123</option>
+								</select>
+								<label for="useMyBilling" class="commlabel commlabel--input_top"><input type="checkbox" id="useMyBilling" class="commcheck">Use my billing address </label>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="commbtn_group">
+					<button class="commbtn_l_i submit_btn">delete</button>
+				</div>
+			</div>
+			<!-- /sub content -->
+
+		</div>
+		<!-- /global container -->
+		<!--#include file="/include/_side_cart.html" -->
+		<!--#include file="/include/_footer.html" -->
+		<!--#include file="/include/_foot.html" -->
+	</div>
+	<!-- /global wrap -->
+</body>
+</html>
